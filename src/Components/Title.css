@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.section_title {
+  text-align: center;
+  padding: 20px;
+}
+.section_title h3 {
+  color: rgb(39, 156, 202);
+  font-size: 33px;
+  font-weight: 200;
+  text-transform: capitalize;
+  border-bottom: 1px solid white;
+  display: inline-block;
+}

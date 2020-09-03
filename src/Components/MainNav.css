@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav_container {
+  position: fixed;
+  width: 100%;
+  z-index: 54;
+}
+.center_logo {
+  width: 100%;
+  height: 11vh;
+  border: 1px solid white;
+  box-shadow: 2px 3px 13px grey;
+  position: relative;
+  background: white;
+}
+.center_logo img {
+  width: 200px;
+  height: 10vh;
+  object-fit: fill;
+  object-position: center;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main_nav {
+  width: 100%;
+  height: 6vh;
+  position: relative;
+}
+.main_nav .main_nav_container {
+  width: 80%;
+  height: 5vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0.2vh;
+  margin-bottom: 0.5vh;
+  background: #25b2e6;
+  border: 1px solid #25b2e6;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main_nav_container .active {
+  background: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px #25b2e6;
+  padding: 3px 7px;
+}
+.main_nav_container .home a,
+.main_nav_container .about a,
+.main_nav_container .services a,
+.main_nav_container .projects a,
+.main_nav_container .skills a,
+.main_nav_container .team a,
+.main_nav_container .contacts a {
+  text-decoration-line: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+.main_nav_container .active a {
+  color: #179bd4;
+}
+.main_nav_container .about:hover,
+.main_nav_container .services:hover,
+.main_nav_container .projects:hover,
+.main_nav_container .skills:hover,
+.main_nav_container .team:hover,
+.main_nav_container .contacts:hover {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-property: 0s;
+}
+.main_nav_container .about:hover,
+.main_nav_container .services:hover,
+.main_nav_container .projects:hover,
+.main_nav_container .skills:hover,
+.main_nav_container .team:hover,
+.main_nav_container .contacts:hover {
+  background: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px #25b2e6;
+  padding: 3px 7px;
+}
+.main_nav_container .about:hover a,
+.main_nav_container .services:hover a,
+.main_nav_container .projects:hover a,
+.main_nav_container .skills:hover a,
+.main_nav_container .team:hover a,
+.main_nav_container .contacts:hover a {
+  color: #179bd4;
+}
+
+.main_nav_container .services {
+  position: relative;
+}
+.main_nav_container .services .dropdown {
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  background: rgba(300, 300, 300, 0.7);
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px grey;
+  height: 150px;
+  width: 200px;
+  line-height: 30px;
+  text-align: center;
+}
+.main_nav_container .services .dropdown .web_design:hover,
+.main_nav_container .services .dropdown .web_development:hover,
+.main_nav_container .services .dropdown .mobile_application:hover,
+.main_nav_container .services .dropdown .responsive_design:hover {
+  border-bottom: 1px solid grey;
+}
+.main_nav_container .services .dropdown {
+  display: none;
+}
+.main_nav_container .services:hover .dropdown {
+  display: block;
+}
+
+/*media querys-start*/
+/*point--900*/
+@media screen and (max-width: 900px) {
+  .main_nav_container .active {
+    padding: 3px 7px;
+  }
+  .main_nav_container .about:hover,
+  .main_nav_container .services:hover,
+  .main_nav_container .projects:hover,
+  .main_nav_container .skills:hover,
+  .main_nav_container .team:hover,
+  .main_nav_container .contacts:hover {
+    padding: 3px 7px;
+  }
+}
+/*point--600px-width*/
+@media screen and (max-width: 600px) {
+  .center_logo {
+    display: none;
+  }
+  .main_nav {
+    display: none;
+  }
+}
+/*media querys-end*/
